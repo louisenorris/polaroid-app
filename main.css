@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box; 
+    background-color: rgb(4, 110, 180);
+}
+
+html {
+    height: 100%;
+}
+
+#title {
+    text-align: center;
+    font-size: 3rem;
+}
