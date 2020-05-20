@@ -12,3 +12,27 @@ html {
     text-align: center;
     font-size: 3rem;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#camera {
+    background-color: black;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 15px 15px 5px 5px; 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.lens {
+    background-color: grey;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+
+}
