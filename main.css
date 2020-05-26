@@ -131,3 +131,9 @@ html {
     align-self: flex-start;
     margin: 0.4rem;
 }
+
+#photo {
+    position: relative;
+    height: 18rem;
+    transform: translateY(-1.5rem);
+}
