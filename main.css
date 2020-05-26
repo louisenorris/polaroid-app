@@ -26,13 +26,31 @@ html {
     border-radius: 15px 15px 5px 5px; 
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
-.lens {
+.camera__button {
+    background-color: red;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    align-self: center;
+    margin: 1.3rem;
+}
+
+.camera__lens {
     background-color: grey;
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
+    align-self: center;
+}
 
+.camera__view-finder{
+    background-color: white;
+    height: 4rem;
+    width: 3.5rem;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin: 0.4rem;
 }
