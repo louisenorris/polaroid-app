@@ -21,15 +21,17 @@ html {
 
 #camera {
     background-color: black;
-    height: 15rem;
+    height: 13rem;
     width: 15rem;
-    border-radius: 15px 15px 5px 5px; 
+    border-radius: 15px 15px 0px 0px; 
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    /* transform: translateY(-18rem); */
+    z-index: 2;
 }
 
-.camera__button {
+#camera__button {
     background-color: red;
     height: 2rem;
     width: 2rem;
@@ -132,8 +134,57 @@ html {
     margin: 0.4rem;
 }
 
-#photo {
+.photo-frame {
     position: relative;
     height: 18rem;
-    transform: translateY(-1.5rem);
+    width: 11rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+}
+
+.photo {
+    opacity: 0;
+    position: relative;
+    height: 14rem;
+    top: 10px
+}
+
+.show {
+    animation: slide-down 6s forwards;
+}
+
+#camera__bottom{
+    background-color: black;
+    height: 2rem;
+    width: 15rem;
+    border-radius: 0px 0px 5px 5px; 
+    transform: translateY(-18rem);
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-18rem) scaleY(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0rem) scaleY(1);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
