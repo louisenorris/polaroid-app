@@ -44,9 +44,86 @@ html {
     width: 5rem;
     border-radius: 50%;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.camera__view-finder{
+.lens__ring_1 {
+    background-color: black;
+    height: 4.6rem;
+    width: 4.6rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lens__ring_2 {
+    background-color: rgb(70, 68, 68);
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lens__ring_3 {
+    background-color: black;
+    height: 3.8rem;
+    width: 3.8rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lens__ring_4 {
+    background-color: rgb(70, 68, 68);
+    height: 3.4rem;
+    width: 3.4rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lens__ring_5 {
+    background-color: black;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lens__ring_6 {
+    background-color: rgb(70, 68, 68);
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lens__ring_7 {
+    background-color: black;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+}
+
+.camera__view-finder {
     background-color: white;
     height: 4rem;
     width: 3.5rem;
