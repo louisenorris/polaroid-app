@@ -1,8 +1,10 @@
 const cameraButton = document.getElementById('camera__button');
-const photo = document.querySelector('.photo-frame');
+const photoFrame = document.querySelector('.photo-frame');
+const photo = document.querySelector('.photo');
 
 const showPhoto = () => {
-    photo.classList.add('show');
+    photoFrame.classList.add('show');
+    photo.classList.add('fade-in');
 }
 
 cameraButton.addEventListener('click', showPhoto);
