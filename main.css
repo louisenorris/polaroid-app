@@ -36,8 +36,8 @@ html {
 
 #camera__button {
     background-color: red;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.4rem;
+    width: 1.4rem;
     border-radius: 50%;
     align-self: center;
     margin: 1.3rem;
@@ -225,28 +225,28 @@ html {
         width: 4.6rem;
     }
     .lens__ring_2 {
-        height: 4.2rem;
-        width: 4.2rem;
+        height: 4.3rem;
+        width: 4.3rem;
     }
     .lens__ring_3 {
-        height: 3.8rem;
-        width: 3.8rem;
+        height: 4.1rem;
+        width: 4.1rem;
     }
     .lens__ring_4 {
-        height: 3.4rem;
-        width: 3.4rem;
+        height: 3.7rem;
+        width: 3.7rem;
     }
     .lens__ring_5 {
-        height: 3rem;
-        width: 3rem;
+        height: 3.5rem;
+        width: 3.5rem;
     }
     .lens__ring_6 {
-        height: 2.6rem;
-        width: 2.6rem;
+        height: 3.2rem;
+        width: 3.2rem;
     }
     .lens__ring_7 {
-        height: 2.2rem;
-        width: 2.2rem;
+        height: 3rem;
+        width: 3rem;
     }
     .photo-frame {
         height: 18rem;
