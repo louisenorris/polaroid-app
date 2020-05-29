@@ -147,7 +147,7 @@ html {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    opacity: 0;
+    opacity: 0; 
     border-radius: 0 0 5px 5px;
 }
 
@@ -173,6 +173,10 @@ html {
     width: 11rem;
     border-radius: 0px 0px 5px 5px; 
     transform: translateY(-12rem);
+}
+
+#player {   
+    opacity: 0;
 }
 
 @keyframes slide-down {
