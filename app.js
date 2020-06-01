@@ -14,7 +14,7 @@ const showPhoto = () => {
 cameraButton.addEventListener('click', showPhoto);
 
 const constraints = {
-    video: true,
+    video: { width: 165, height: 240 },
   };
 
 cameraButton.addEventListener('click', () => {
@@ -22,8 +22,12 @@ cameraButton.addEventListener('click', () => {
     context.drawImage(player, 0, 0, photo.width, photo.height);
 });
 
+console.log(player);
+
 // Attach the video stream to the video element and autoplay.
 navigator.mediaDevices.getUserMedia(constraints)
     .then((stream) => {
       player.srcObject = stream;
     });
+
+
