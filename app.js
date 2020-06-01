@@ -20,9 +20,10 @@ const constraints = {
 cameraButton.addEventListener('click', () => {
 // Draw the video frame to the canvas.
     context.drawImage(player, 0, 0, photo.width, photo.height);
-});
 
-console.log(player);
+    // Stop all video streams.
+    player.srcObject.getVideoTracks().forEach(track => track.stop());
+});
 
 // Attach the video stream to the video element and autoplay.
 navigator.mediaDevices.getUserMedia(constraints)
