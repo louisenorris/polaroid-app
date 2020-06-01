@@ -3,6 +3,8 @@
 * {
     box-sizing: border-box; 
     background-color: rgb(4, 110, 180);
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -13,7 +15,6 @@ html {
     color: white;
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -177,6 +178,53 @@ html {
 
 #player {   
     opacity: 0;
+}
+
+.filter_options {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.filter__div {
+    transform: translateY(-15rem);
+}
+
+.container__filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.container__filters div {
+    background-color: red;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: 0.4rem;
+}
+
+.container__filters div span {
+    line-height: 3rem;
+    font-size: 0.5rem;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.filter__sepia {
+    filter: sepia(60%);
+}
+
+.filter__gray-scale {
+    filter: grayscale(50%);
+}
+
+.filter__hue-rotate {
+    filter: hue-rotate(90deg);
+}
+
+.filter__chilling{
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
 }
 
 @keyframes slide-down {

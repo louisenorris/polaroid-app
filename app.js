@@ -5,6 +5,14 @@ const photoFrame = document.querySelector('.photo-frame');
 const photo = document.querySelector('.photo');
 const player = document.getElementById('player');
 const context = photo.getContext('2d');
+const filterBtns = document.querySelectorAll('.container__filters div');
+
+
+for (const button of filterBtns) {
+    button.addEventListener('click', function(event) {
+      photo.classList.add(event.target.className)
+    });
+};
 
 const showPhoto = () => {
     photoFrame.classList.add('show');
