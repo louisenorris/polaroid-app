@@ -213,7 +213,7 @@ html {
 }
 
 .filter__gray_scale {
-    filter: grayscale(50%);
+    filter: grayscale(100%);
 }
 
 .filter__hue_rotate {
