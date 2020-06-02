@@ -185,15 +185,12 @@ html {
     font-size: 1rem;
 }
 
-.filter__div {
-    transform: translateY(-15rem);
-}
-
 .container__filters {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 1rem;
 }
 
 .container__filters div {
@@ -215,16 +212,16 @@ html {
     filter: sepia(60%);
 }
 
-.filter__gray-scale {
+.filter__gray_scale {
     filter: grayscale(50%);
 }
 
-.filter__hue-rotate {
+.filter__hue_rotate {
     filter: hue-rotate(90deg);
 }
 
 .filter__chilling{
-    filter: drop-shadow(16px 16px 20px red) invert(75%);
+    filter: invert(75%);
 }
 
 @keyframes slide-down {

@@ -10,6 +10,22 @@
 </head>
 <body>
   <h1 id="title">Take your Pic</h1>
+  <div class="filter__div">
+    <p class="filter_options">Filter options: click to select</p>
+    <div class="container__filters">
+      <div class="filter__sepia">
+        <span>Sepia</span>
+      </div>
+      <div class="filter__gray_scale">
+        <span>Gray Scale</span>
+      </div>
+      <div class="filter__hue_rotate">
+        <span>Hue Rotate</span>
+      </div>
+      <div class="filter__chilling">
+        <span>Chilling</span>
+      </div>
+    </div>
   <div class="container">
     <div id="camera">
       <div id="camera__button"></div>
@@ -35,22 +51,6 @@
       <canvas class="photo" width=320 height=240></canvas>
     </div>
     <div id="camera__bottom"></div>
-    <div class="filter__div">
-    <p class="filter_options">Filter options: click to select</p>
-    <div class="container__filters">
-      <div class="filter__sepia">
-        <span>Sepia</span>
-      </div>
-      <div class="filter__gray-scale">
-        <span>Gray Scale</span>
-      </div>
-      <div class="filter__hue-rotate">
-        <span>Hue Rotate</span>
-      </div>
-      <div class="filter__chilling">
-        <span>Chilling</span>
-      </div>
-    </div>
   </div>
   </div>
   <video id="player" controls autoplay></video>

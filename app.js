@@ -6,10 +6,10 @@ const photo = document.querySelector('.photo');
 const player = document.getElementById('player');
 const context = photo.getContext('2d');
 const filterBtns = document.querySelectorAll('.container__filters div');
+const filterBtnsArr = Array.from(filterBtns);
 
-
-for (const button of filterBtns) {
-    button.addEventListener('click', function(event) {
+for (let i = 0; i < filterBtnsArr.length; i++) {
+  filterBtnsArr[i].addEventListener('click', function(event) {
       photo.classList.add(event.target.className)
     });
 };
