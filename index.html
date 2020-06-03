@@ -10,8 +10,10 @@
 </head>
 <body>
   <h1 id="title">Take your Pic</h1>
+
   <div class="filter__div">
     <p class="filter_options">Fancy adding a filter? Just click to select then take your photo.</p>
+    
     <div class="container__filters">
       <div class="filter__sepia">
         <span>SEPIA</span>
@@ -26,6 +28,8 @@
         <span>INVERSE</span>
       </div>
     </div>
+  </div>
+
   <div class="container">
     <div id="camera">
       <div class="camera__button_container">
@@ -49,13 +53,16 @@
       </div>
       <div class="camera__view-finder"></div>
     </div>
+
     <div class="photo-frame">
       <!-- <img class="photo" src="assets/photo.jpg"> -->
       <canvas class="photo" width=320 height=240></canvas>
     </div>
+
     <div id="camera__bottom"></div>
-  </div>
-  </div>
+  </div> 
+  <!-- container end -->
+
   <video id="player" controls autoplay></video>
 </body>
 </html>

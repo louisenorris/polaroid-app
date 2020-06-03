@@ -5,6 +5,7 @@ const photoFrame = document.querySelector('.photo-frame');
 const photo = document.querySelector('.photo');
 const player = document.getElementById('player');
 const context = photo.getContext('2d');
+const filterContainer = document.querySelector('.filter__div');
 const filterBtns = document.querySelectorAll('.container__filters div');
 const filterBtnsArr = Array.from(filterBtns);
 
@@ -17,6 +18,7 @@ for (let i = 0; i < filterBtnsArr.length; i++) {
 const showPhoto = () => {
     photoFrame.classList.add('show');
     photo.classList.add('fade-in');
+    filterContainer.style.display = 'none'
 }
 
 cameraButton.addEventListener('click', showPhoto);

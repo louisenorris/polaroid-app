@@ -31,7 +31,6 @@ html {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    /* transform: translateY(-18rem); */
     z-index: 2;
 }
 
@@ -43,7 +42,6 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 #camera__button {
@@ -62,6 +60,7 @@ html {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     margin: 1rem;
+    animation: slide-up-and-down 0.5s infinite;
 }
 
 .camera__lens {
@@ -258,6 +257,21 @@ html {
     }
 }
 
+/* @keyframes slide-up-and-down {
+    0% {
+        transform: rotate(-135deg) translate(-1rem, -1rem);
+        /* transform-origin: bottom left; */
+    }
+    50% {
+        transform: rotate(-135deg) translate(0, 0);
+        /* transform-origin: bottom left; */
+    } 
+    100% {
+        transform: rotate(-135deg) translate(-1rem, -1rem);
+        /* transform-origin: bottom left; */
+    } 
+} */
+
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -265,6 +279,32 @@ html {
     to {
         opacity: 1;
     }
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-18rem) scaleY(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0rem) scaleY(1);
+    }
+}
+
+@keyframes slide-up-and-down {
+    0% {
+        transform: rotate(-135deg) translate(-0.25rem, -0.25rem);
+    }
+    50% {
+        transform: rotate(-135deg) translate(0, 0);
+    } 
+    100% {
+        transform: rotate(-135deg) translate(-0.25rem, -0.25rem);
+    } 
 }
 
 @media (min-width: 40rem) {
@@ -329,19 +369,5 @@ html {
     .camera__view-finder {
         height: 4rem;
         width: 3.5rem;
-    }
-
-    @keyframes slide-down {
-        0% {
-            opacity: 0;
-            transform: translateY(-18rem) scaleY(0);
-        }
-        10% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0rem) scaleY(1);
-        }
     }
 }
