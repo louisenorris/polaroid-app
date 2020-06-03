@@ -54,12 +54,12 @@ html {
 .arrow__take_pic {
     border: solid white;
     background-color: transparent;
-    border-width: 0 3px 3px 0;
+    border-width: 0 1.5px 1.5px 0;
     display: inline-block;
     padding: 6px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-    margin: 1rem;
+    margin: 1rem 0 0 0;
     animation: slide-up-and-down 0.5s infinite;
 }
 
@@ -183,7 +183,11 @@ html {
     animation: slide-down 6s forwards;
 }
 
-.fade-in{
+/* .hide {
+    animation: scale-down 1s forwards;
+} */
+
+.fade-in {
     animation: 13s fade-in 13s cubic-bezier(0.44, 0.34, 0.82, 0.46) forwards;
 }
 
@@ -199,9 +203,9 @@ html {
     opacity: 0;
 }
 
-.filter_options {
+.filter_instructions {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .container__filters {
@@ -214,14 +218,14 @@ html {
 
 .container__filters div {
     background-color: red;
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     margin: 0.4rem;
 }
 
 .container__filters div span {
-    line-height: 3rem;
+    line-height: 2.5rem;
     font-size: 0.5rem;
     text-decoration: none;
     background-color: transparent;
@@ -250,27 +254,13 @@ html {
     }
     10% {
         opacity: 1;
+        /* transform: scaleY(0); */
     }
     100% {
         opacity: 1;
         transform: translateY(0rem) scaleY(1);
     }
 }
-
-/* @keyframes slide-up-and-down {
-    0% {
-        transform: rotate(-135deg) translate(-1rem, -1rem);
-        /* transform-origin: bottom left; */
-    }
-    50% {
-        transform: rotate(-135deg) translate(0, 0);
-        /* transform-origin: bottom left; */
-    } 
-    100% {
-        transform: rotate(-135deg) translate(-1rem, -1rem);
-        /* transform-origin: bottom left; */
-    } 
-} */
 
 @keyframes fade-in {
     from {
@@ -281,17 +271,12 @@ html {
     }
 }
 
-@keyframes slide-down {
-    0% {
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
         opacity: 0;
-        transform: translateY(-18rem) scaleY(0);
-    }
-    10% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0rem) scaleY(1);
     }
 }
 
@@ -318,8 +303,11 @@ html {
     #camera__button {
         height: 2rem;
         width: 2rem;
-        }
-
+    }
+    .arrow__take_pic {
+        border-width: 0 3px 3px 0;
+        margin: 1rem;
+    }
     #camera__bottom {
         height: 2rem;
         width: 15rem;
@@ -357,6 +345,16 @@ html {
         height: 3rem;
         width: 3rem;
     }
+    .filter_instructions {
+        font-size: 1rem;
+    }
+    .container__filters div {
+        height: 3rem;
+        width: 3rem;
+    }
+    .container__filters div span {
+        line-height: 3rem;
+    }
     .photo-frame {
         height: 18rem;
         width: 11rem;
@@ -369,5 +367,19 @@ html {
     .camera__view-finder {
         height: 4rem;
         width: 3.5rem;
+    }
+    @keyframes slide-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-18rem) scaleY(0);
+        }
+        10% {
+            opacity: 1;
+            /* transform: scaleY(0); */
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0rem) scaleY(1);
+        }
     }
 }

@@ -18,7 +18,8 @@ for (let i = 0; i < filterBtnsArr.length; i++) {
 const showPhoto = () => {
     photoFrame.classList.add('show');
     photo.classList.add('fade-in');
-    filterContainer.style.display = 'none'
+    filterContainer.classList.add('hide');
+    // filterContainer.style.display = 'none'
 }
 
 cameraButton.addEventListener('click', showPhoto);
