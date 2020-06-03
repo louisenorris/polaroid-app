@@ -183,9 +183,9 @@ html {
     animation: slide-down 6s forwards;
 }
 
-/* .hide {
-    animation: scale-down 1s forwards;
-} */
+.hide {
+    animation: fade-out 1s forwards;
+}
 
 .fade-in {
     animation: 13s fade-in 13s cubic-bezier(0.44, 0.34, 0.82, 0.46) forwards;
@@ -254,7 +254,6 @@ html {
     }
     10% {
         opacity: 1;
-        /* transform: scaleY(0); */
     }
     100% {
         opacity: 1;
@@ -375,7 +374,6 @@ html {
         }
         10% {
             opacity: 1;
-            /* transform: scaleY(0); */
         }
         100% {
             opacity: 1;

@@ -6,8 +6,10 @@ const photo = document.querySelector('.photo');
 const player = document.getElementById('player');
 const context = photo.getContext('2d');
 const filterContainer = document.querySelector('.filter__div');
+const filterPhotoInstructions = document.querySelector('.filter_instructions');
 const filterBtns = document.querySelectorAll('.container__filters div');
 const filterBtnsArr = Array.from(filterBtns);
+const cameraBtnArrow = document.querySelector('.arrow__take_pic');
 
 for (let i = 0; i < filterBtnsArr.length; i++) {
   filterBtnsArr[i].addEventListener('click', function(event) {
@@ -18,8 +20,8 @@ for (let i = 0; i < filterBtnsArr.length; i++) {
 const showPhoto = () => {
     photoFrame.classList.add('show');
     photo.classList.add('fade-in');
-    filterContainer.classList.add('hide');
-    // filterContainer.style.display = 'none'
+    filterPhotoInstructions.innerText = 'Watch your polaroid develop, then re-take or save.';
+    cameraBtnArrow.classList.add('hide');
 }
 
 cameraButton.addEventListener('click', showPhoto);
